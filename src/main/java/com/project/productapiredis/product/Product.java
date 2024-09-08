@@ -15,7 +15,7 @@ import java.util.UUID;
 @Generated
 public class Product implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1998912309L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -37,7 +37,7 @@ public class Product implements Serializable {
     public ProductResponse toResponse() {
         return ProductResponse
                 .builder()
-                .name(name).reference(reference).quantity(quantity).price(price)
+                .id(id).name(name).reference(reference).quantity(quantity).price(price)
                 .build();
     }
 }

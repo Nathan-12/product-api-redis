@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 public class ProductAlreadyExistsException extends RuntimeException {
 
-    private static final long serialVersionUID = 1;
+    private static final long serialVersionUID = 1198789095L;
     public final HttpStatus statusCode;
     public final String message;
 
